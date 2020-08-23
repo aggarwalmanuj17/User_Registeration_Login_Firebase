@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gotham"
+        android:text="My Details"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/namee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/grey_90"
+        android:textColorHint="@color/greyDark"
+        android:fontFamily="@font/myriad"
+        android:inputType="text"
+        android:maxLines="1"
+        android:drawableStart="@drawable/profile"
+        android:drawablePadding="5dp"/>
+
+    <EditText
+        android:id="@+id/Maill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textColor="@color/grey_90"
+        android:textColorHint="@color/greyDark"
+        android:fontFamily="@font/myriad"
+        android:inputType="text"
+        android:maxLines="1"
+        android:drawableStart="@drawable/mail"
+        android:drawablePadding="5dp"/>
+
+    <EditText
+        android:id="@+id/Myphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone"
+        android:textColor="@color/grey_90"
+        android:textColorHint="@color/greyDark"
+        android:fontFamily="@font/myriad"
+        android:inputType="text"
+        android:maxLines="1"
+        android:drawableStart="@drawable/phone"
+        android:drawablePadding="5dp"/>
+    <EditText
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/grey_90"
+        android:textColorHint="@color/greyDark"
+        android:fontFamily="@font/myriad"
+        android:inputType="text|textMultiLine"
+        android:maxLines="3"
+        android:drawableStart="@drawable/location"
+        android:drawablePadding="5dp"/>
+
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/color_list"
+        android:text="Logout"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        />
+
+</LinearLayout>
